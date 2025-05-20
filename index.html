@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus - Innovative Tech Solutions from Uganda</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0F3460",
+              secondary: "#4A80AA",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+      background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20tech%20office%20environment%20with%20a%20sleek%20workspace%2C%20showing%20computers%20and%20digital%20displays.%20The%20left%20side%20has%20a%20clean%20gradient%20from%20deep%20blue%20to%20transparent%2C%20creating%20a%20perfect%20area%20for%20text%20overlay.%20The%20right%20side%20shows%20innovative%20technology%20elements%20with%20subtle%20Ugandan%20cultural%20influences.%20The%20overall%20style%20is%20professional%2C%20modern%2C%20and%20tech-focused%20with%20excellent%20lighting%20and%20a%20clean%20aesthetic.&width=1920&height=1080&seq=nexus-hero&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      input:focus {
+      outline: none;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+      .custom-checkbox {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      }
+      .custom-checkbox input {
+      display: none;
+      }
+      .checkbox-indicator {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #0F3460;
+      border-radius: 4px;
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      }
+      .custom-checkbox input:checked + .checkbox-indicator {
+      background-color: #0F3460;
+      }
+      .custom-checkbox input:checked + .checkbox-indicator:after {
+      content: '';
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      margin-bottom: 2px;
+      }
+      .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(15, 52, 96, 0.1);
+      }
+      .testimonial-slider {
+      overflow: hidden;
+      position: relative;
+      }
+      .testimonial-slide {
+      transition: transform 0.5s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-3xl font-['Pacifico'] text-primary">Nexus</a>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="#services"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Services</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Projects</a
+          >
+          <a
+            href="#about"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >About</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-primary font-medium transition"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center space-x-4">
+          <div class="relative">
+            <button class="flex items-center text-gray-700 hover:text-primary">
+              <span>EN</span>
+              <div class="w-5 h-5 flex items-center justify-center ml-1">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+            </button>
+          </div>
+          <button
+            class="bg-primary text-white px-5 py-2 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition"
+          >
+            Get Started
+          </button>
+          <button class="md:hidden w-10 h-10 flex items-center justify-center">
+            <i class="ri-menu-line ri-lg"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero-section pt-32 pb-20 text-white">
+      <div class="container mx-auto px-6 w-full">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Innovative Tech Solutions from the Heart of Uganda
+          </h1>
+          <p class="text-xl mb-8">
+            Web Design | Mobile Development | Digital Marketing
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              id="exploreServices"
+              class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition"
+            >
+              Explore Our Services
+            </button>
+            <button
+              class="bg-white text-primary px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition"
+            >
+              View Our Work
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Showcase -->
+    <section id="services" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            We deliver cutting-edge technology solutions tailored to your
+            business needs, combining global standards with local expertise.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8" id="servicesGrid">
+          <!-- Web Design -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            id="webDesignCard"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-code-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Web Design
+            </h3>
+            <p class="text-gray-600 mb-6 text-center">
+              We create responsive, user-friendly websites that capture your
+              brand's essence while ensuring optimal performance across all
+              devices.
+            </p>
+            <div class="service-details hidden">
+              <div class="border-t border-gray-200 pt-6 mt-6">
+                <div class="grid grid-cols-3 gap-4 mb-6">
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Basic</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">$999</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>5 Pages</li>
+                      <li>Responsive Design</li>
+                      <li>Basic SEO</li>
+                      <li>Contact Form</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="text-center p-4 border border-primary rounded bg-primary bg-opacity-5"
+                  >
+                    <h4 class="font-semibold text-primary mb-2">
+                      Professional
+                    </h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">$2,499</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>10 Pages</li>
+                      <li>Advanced Features</li>
+                      <li>Full SEO Package</li>
+                      <li>CMS Integration</li>
+                    </ul>
+                  </div>
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Enterprise</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">Custom</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Unlimited Pages</li>
+                      <li>Custom Features</li>
+                      <li>Full Stack Solution</li>
+                      <li>Priority Support</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Timeline</h4>
+                  <div class="flex items-center space-x-2 text-gray-600">
+                    <i class="ri-time-line"></i>
+                    <span>4-8 weeks depending on complexity</span>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Case Study</h4>
+                  <div class="bg-gray-50 p-4 rounded">
+                    <h5 class="font-medium mb-2">
+                      Kampala Fashions E-commerce
+                    </h5>
+                    <p class="text-sm text-gray-600 mb-2">
+                      Increased online sales by 150% within 3 months of launch
+                    </p>
+                    <a href="#" class="text-primary text-sm hover:underline"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <button
+                  class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition w-full request-quote-btn"
+                  data-service="web-design"
+                >
+                  Request Quote
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile App Development -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            id="mobileAppCard"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-smartphone-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Mobile App Development
+            </h3>
+            <p class="text-gray-600 mb-6 text-center">
+              From concept to deployment, we build native and cross-platform
+              mobile applications that deliver exceptional user experiences.
+            </p>
+            <div class="service-details hidden">
+              <div class="border-t border-gray-200 pt-6 mt-6">
+                <div class="grid grid-cols-3 gap-4 mb-6">
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Basic</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">$4,999</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Single Platform</li>
+                      <li>Core Features</li>
+                      <li>Basic UI/UX</li>
+                      <li>3 Months Support</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="text-center p-4 border border-primary rounded bg-primary bg-opacity-5"
+                  >
+                    <h4 class="font-semibold text-primary mb-2">
+                      Professional
+                    </h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">$9,999</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Cross-Platform</li>
+                      <li>Advanced Features</li>
+                      <li>Premium UI/UX</li>
+                      <li>6 Months Support</li>
+                    </ul>
+                  </div>
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Enterprise</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">Custom</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Full Custom Solution</li>
+                      <li>All Platforms</li>
+                      <li>Custom Features</li>
+                      <li>1 Year Support</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Timeline</h4>
+                  <div class="flex items-center space-x-2 text-gray-600">
+                    <i class="ri-time-line"></i>
+                    <span>3-6 months depending on complexity</span>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Case Study</h4>
+                  <div class="bg-gray-50 p-4 rounded">
+                    <h5 class="font-medium mb-2">MicroBank Mobile Banking</h5>
+                    <p class="text-sm text-gray-600 mb-2">
+                      100,000+ downloads in first month with 4.8 star rating
+                    </p>
+                    <a href="#" class="text-primary text-sm hover:underline"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <button
+                  class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition w-full request-quote-btn"
+                  data-service="mobile-app"
+                >
+                  Request Quote
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Digital Marketing -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            id="marketingCard"
+          >
+            <div
+              class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="ri-line-chart-line ri-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 text-center">
+              Digital Marketing
+            </h3>
+            <p class="text-gray-600 mb-6 text-center">
+              We implement data-driven strategies to increase your online
+              visibility, drive traffic, and convert visitors into loyal
+              customers.
+            </p>
+            <div class="service-details hidden">
+              <div class="border-t border-gray-200 pt-6 mt-6">
+                <div class="grid grid-cols-3 gap-4 mb-6">
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Starter</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">$799/mo</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Social Media</li>
+                      <li>Basic SEO</li>
+                      <li>Monthly Report</li>
+                      <li>Email Support</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="text-center p-4 border border-primary rounded bg-primary bg-opacity-5"
+                  >
+                    <h4 class="font-semibold text-primary mb-2">Growth</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">
+                      $1,499/mo
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Full Marketing Suite</li>
+                      <li>Advanced SEO</li>
+                      <li>Weekly Reports</li>
+                      <li>Priority Support</li>
+                    </ul>
+                  </div>
+                  <div class="text-center p-4 border border-gray-100 rounded">
+                    <h4 class="font-semibold text-primary mb-2">Enterprise</h4>
+                    <p class="text-2xl font-bold text-gray-900 mb-2">Custom</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                      <li>Custom Strategy</li>
+                      <li>Full Service Suite</li>
+                      <li>Daily Reports</li>
+                      <li>24/7 Support</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Timeline</h4>
+                  <div class="flex items-center space-x-2 text-gray-600">
+                    <i class="ri-time-line"></i>
+                    <span>Minimum 3 months commitment</span>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Case Study</h4>
+                  <div class="bg-gray-50 p-4 rounded">
+                    <h5 class="font-medium mb-2">Pearl of Africa Tourism</h5>
+                    <p class="text-sm text-gray-600 mb-2">
+                      45% increase in tourism bookings within 6 months
+                    </p>
+                    <a href="#" class="text-primary text-sm hover:underline"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <button
+                  class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition w-full request-quote-btn"
+                  data-service="marketing"
+                >
+                  Request Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us -->
+    <section
+      id="about"
+      class="py-20 bg-gray-50"
+      style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%230f3460\' fill-opacity=\'0.03\' fill-rule=\'evenodd\'/%3E%3C/svg%3E'); background-size: 400px 400px;"
+    >
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Why Choose Nexus?
+            </h2>
+            <p class="text-gray-600 mb-6">
+              As Uganda's premier tech company, we bring a unique blend of
+              global expertise and local understanding. Our solutions are
+              tailored to the African market while meeting international
+              standards.
+            </p>
+            <p class="text-gray-600 mb-6">
+              We believe in technology as a force for positive change across
+              East Africa, empowering businesses to reach their full potential
+              through innovative digital solutions.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Our team of talented Ugandan developers, designers, and marketers
+              are passionate about delivering excellence in every project we
+              undertake.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="text-4xl font-bold text-primary mb-2">7+</div>
+              <p class="text-gray-600">Years in Business</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="text-4xl font-bold text-primary mb-2">200+</div>
+              <p class="text-gray-600">Projects Completed</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="text-4xl font-bold text-primary mb-2">98%</div>
+              <p class="text-gray-600">Client Satisfaction</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="text-4xl font-bold text-primary mb-2">35+</div>
+              <p class="text-gray-600">Team Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Projects -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Featured Projects
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore our portfolio of successful projects that have helped
+            businesses across East Africa transform their digital presence.
+          </p>
+        </div>
+        <div class="flex justify-center mb-10">
+          <div class="inline-flex bg-gray-100 p-1 rounded-full">
+            <button
+              class="px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap"
+            >
+              All Projects
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+            >
+              Web Design
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+            >
+              Mobile Apps
+            </button>
+            <button
+              class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+            >
+              Marketing
+            </button>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="project-card rounded-lg overflow-hidden shadow-md">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=A%20modern%2C%20professional%20e-commerce%20website%20interface%20for%20a%20Ugandan%20clothing%20brand.%20The%20design%20shows%20a%20clean%2C%20responsive%20layout%20with%20product%20images%2C%20navigation%20menu%2C%20and%20shopping%20cart.%20The%20style%20is%20contemporary%20with%20a%20focus%20on%20user%20experience%2C%20featuring%20African%20fashion%20elements%20with%20a%20global%20appeal.&width=600&height=400&seq=nexus-project1&orientation=landscape"
+                alt="E-commerce Website"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <span class="text-sm text-primary font-medium">Web Design</span>
+              <h3 class="text-xl font-semibold text-gray-900 mt-2">
+                Kampala Fashions E-commerce
+              </h3>
+              <p class="text-gray-600 mt-2">
+                A responsive online store for Uganda's leading fashion retailer,
+                featuring secure payment integration and inventory management.
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card rounded-lg overflow-hidden shadow-md">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=A%20mobile%20banking%20application%20interface%20displayed%20on%20a%20smartphone.%20The%20app%20shows%20a%20clean%2C%20intuitive%20design%20with%20financial%20dashboard%2C%20transaction%20history%2C%20and%20payment%20options.%20The%20interface%20has%20a%20professional%20blue%20color%20scheme%20with%20clear%20typography%20and%20modern%20UI%20elements%2C%20designed%20for%20Ugandan%20users.&width=600&height=400&seq=nexus-project2&orientation=landscape"
+                alt="Mobile Banking App"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <span class="text-sm text-primary font-medium"
+                >Mobile Development</span
+              >
+              <h3 class="text-xl font-semibold text-gray-900 mt-2">
+                MicroBank Mobile Banking
+              </h3>
+              <p class="text-gray-600 mt-2">
+                A secure, feature-rich mobile banking application for one of
+                East Africa's fastest-growing financial institutions.
+              </p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card rounded-lg overflow-hidden shadow-md">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://readdy.ai/api/search-image?query=A%20digital%20marketing%20campaign%20dashboard%20showing%20analytics%2C%20social%20media%20metrics%2C%20and%20campaign%20performance%20for%20a%20Ugandan%20tourism%20company.%20The%20interface%20displays%20graphs%2C%20engagement%20statistics%2C%20and%20ROI%20metrics%20with%20a%20professional%20design%20that%20emphasizes%20data%20visualization%20and%20marketing%20insights.&width=600&height=400&seq=nexus-project3&orientation=landscape"
+                alt="Digital Marketing Campaign"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <span class="text-sm text-primary font-medium"
+                >Digital Marketing</span
+              >
+              <h3 class="text-xl font-semibold text-gray-900 mt-2">
+                Pearl of Africa Tourism Campaign
+              </h3>
+              <p class="text-gray-600 mt-2">
+                A comprehensive digital marketing strategy that increased
+                tourism bookings by 45% for Uganda's leading tour operator.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <button
+            class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition"
+          >
+            View All Projects
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Client Testimonials -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Don't just take our word for it. Here's what our clients have to say
+            about working with Nexus.
+          </p>
+        </div>
+        <div class="testimonial-slider relative max-w-4xl mx-auto">
+          <div
+            class="testimonial-slides flex transition-transform duration-500"
+          >
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide w-full flex-shrink-0">
+              <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-6">
+                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20African%20businessman%20in%20his%2040s%20wearing%20a%20suit%2C%20with%20a%20friendly%20smile%20and%20confident%20expression.%20The%20photo%20has%20good%20lighting%2C%20a%20neutral%20background%2C%20and%20a%20professional%20corporate%20look%20suitable%20for%20a%20CEO%20testimonial.&width=100&height=100&seq=nexus-testimonial1&orientation=squarish"
+                      alt="Daniel Okello"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900">
+                      Daniel Okello
+                    </h4>
+                    <p class="text-gray-600">CEO, Kampala Investments</p>
+                  </div>
+                </div>
+                <div class="mb-4 text-yellow-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                  "Nexus transformed our outdated website into a powerful
+                  business tool. Their understanding of both technology and the
+                  local market made all the difference. We've seen a 60%
+                  increase in online inquiries since launch."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide w-full flex-shrink-0">
+              <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-6">
+                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20African%20businesswoman%20in%20her%2030s%20with%20a%20confident%20smile%2C%20wearing%20professional%20attire.%20The%20photo%20has%20good%20lighting%2C%20a%20neutral%20background%2C%20and%20a%20professional%20corporate%20look%20suitable%20for%20a%20marketing%20director%20testimonial.&width=100&height=100&seq=nexus-testimonial2&orientation=squarish"
+                      alt="Sarah Nambi"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900">
+                      Sarah Nambi
+                    </h4>
+                    <p class="text-gray-600">
+                      Marketing Director, East African Breweries
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-4 text-yellow-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                  "The mobile app Nexus developed for our product launch
+                  exceeded all expectations. Their team was responsive,
+                  creative, and delivered on time and within budget. The app has
+                  become central to our customer engagement strategy."
+                </p>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide w-full flex-shrink-0">
+              <div class="bg-white p-8 rounded-lg shadow-md">
+                <div class="flex items-center mb-6">
+                  <div class="w-14 h-14 rounded-full overflow-hidden mr-4">
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20an%20African%20man%20in%20his%2050s%20with%20glasses%2C%20wearing%20business%20casual%20attire%20with%20a%20warm%20smile.%20The%20photo%20has%20good%20lighting%2C%20a%20neutral%20background%2C%20and%20a%20professional%20look%20suitable%20for%20a%20founder%20testimonial.&width=100&height=100&seq=nexus-testimonial3&orientation=squarish"
+                      alt="Robert Mukasa"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold text-gray-900">
+                      Robert Mukasa
+                    </h4>
+                    <p class="text-gray-600">Founder, Entebbe Tours</p>
+                  </div>
+                </div>
+                <div class="mb-4 text-yellow-400 flex">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+                <p class="text-gray-600 italic">
+                  "Working with Nexus on our digital marketing campaign was a
+                  game-changer for our tourism business. Their understanding of
+                  both local and international markets helped us reach new
+                  customers we never thought possible."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center mt-8">
+            <button
+              class="w-3 h-3 rounded-full bg-primary mx-1 testimonial-dot active"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 mx-1 testimonial-dot"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 mx-1 testimonial-dot"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Ready to start your next project? Contact us today to discuss how we
+            can help bring your vision to life.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">
+              Send Us a Message
+            </h3>
+            <form>
+              <div class="mb-6">
+                <label for="name" class="block text-gray-700 mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your name"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="service" class="block text-gray-700 mb-2"
+                  >Service Interested In</label
+                >
+                <div class="relative">
+                  <select
+                    id="service"
+                    class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary appearance-none pr-8"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="web">Web Design</option>
+                    <option value="mobile">Mobile App Development</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div
+                    class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                  >
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Your Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                  placeholder="Tell us about your project"
+                ></textarea>
+              </div>
+              <label class="custom-checkbox mb-6">
+                <input type="checkbox" />
+                <span class="checkbox-indicator"></span>
+                <span class="text-gray-700"
+                  >I agree to receive communications from Nexus</span
+                >
+              </label>
+              <button
+                type="submit"
+                class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div>
+            <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">
+                Contact Information
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-map-pin-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">Office Location</h4>
+                    <p class="text-gray-600">
+                      Plot 45, Kampala Road, Kampala, Uganda
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-phone-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">Phone Number</h4>
+                    <p class="text-gray-600">+256 700 123 456</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-mail-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">Email Address</h4>
+                    <p class="text-gray-600">info@nexusuganda.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mr-4 flex-shrink-0"
+                  >
+                    <i class="ri-time-line text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-900">Business Hours</h4>
+                    <p class="text-gray-600">
+                      Monday - Friday: 8:30 AM - 5:30 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <h4 class="font-medium text-gray-900 mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition"
+                  >
+                    <i class="ri-facebook-fill text-primary"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition"
+                  >
+                    <i class="ri-twitter-fill text-primary"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition"
+                  >
+                    <i class="ri-linkedin-fill text-primary"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full hover:bg-opacity-20 transition"
+                  >
+                    <i class="ri-instagram-fill text-primary"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md h-64 overflow-hidden">
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">
+                Our Location
+              </h3>
+              <div
+                class="h-full w-full bg-cover bg-center rounded"
+                style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 block"
+              >Nexus</a
+            >
+            <p class="text-gray-400 mb-6">
+              Uganda's leading tech company providing innovative digital
+              solutions to businesses across East Africa.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Web Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Mobile App Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >E-commerce Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >UI/UX Design</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Stay updated with our latest news and offers.
+            </p>
+            <form class="mb-4">
+              <div class="flex">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  class="bg-gray-800 text-white px-4 py-3 rounded-l w-full border-none focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  class="bg-primary px-4 py-3 rounded-r !rounded-button whitespace-nowrap hover:bg-opacity-90 transition"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="flex items-center space-x-3">
+              <span class="text-gray-400">We accept:</span>
+              <div class="flex space-x-2">
+                <i class="ri-visa-fill ri-lg"></i>
+                <i class="ri-mastercard-fill ri-lg"></i>
+                <i class="ri-paypal-fill ri-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">
+              &copy; 2025 Nexus. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                >Terms of Service</a
+              >
+              <a href="#" class="text-gray-400 hover:text-white transition"
+                >Cookie Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const servicesButton = document.getElementById("exploreServices");
+        const servicesSection = document.getElementById("services");
+        const serviceCards = document.querySelectorAll("#servicesGrid > div");
+
+        if (servicesButton) {
+          servicesButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            const offset = servicesSection.offsetTop - 80;
+            window.scrollTo({
+              top: offset,
+              behavior: "smooth",
+            });
+
+            serviceCards.forEach((card) => {
+              const details = card.querySelector(".service-details");
+              if (details && details.classList.contains("hidden")) {
+                details.classList.remove("hidden");
+                details.style.opacity = "0";
+                setTimeout(() => {
+                  details.style.transition = "opacity 0.5s ease";
+                  details.style.opacity = "1";
+                }, 50);
+              }
+            });
+          });
+        }
+        const requestButtons = document.querySelectorAll(".request-quote-btn");
+        requestButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const service = this.getAttribute("data-service");
+            const modal = document.createElement("div");
+            modal.className =
+              "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50";
+            modal.innerHTML = `
+      <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+      <div class="flex justify-between items-center mb-6">
+      <h3 class="text-xl font-semibold text-gray-900">Request Quote for ${service.replace("-", " ").replace(/\b\w/g, (l) => l.toUpperCase())}</h3>
+      <button class="text-gray-400 hover:text-gray-600 close-modal">
+      <i class="ri-close-line ri-lg"></i>
+      </button>
+      </div>
+      <form id="quoteForm" class="space-y-4">
+      <div>
+      <label class="block text-gray-700 mb-2">Name</label>
+      <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+      </div>
+      <div>
+      <label class="block text-gray-700 mb-2">Email</label>
+      <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+      </div>
+      <div>
+      <label class="block text-gray-700 mb-2">Phone</label>
+      <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+      </div>
+      <div>
+      <label class="block text-gray-700 mb-2">Project Details</label>
+      <textarea class="w-full px-4 py-2 border border-gray-300 rounded" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition w-full">
+      Submit Request
+      </button>
+      </form>
+      </div>
+      `;
+            document.body.appendChild(modal);
+            const closeModal = modal.querySelector(".close-modal");
+            closeModal.addEventListener("click", () => {
+              modal.remove();
+            });
+            modal.addEventListener("click", (e) => {
+              if (e.target === modal) {
+                modal.remove();
+              }
+            });
+            const form = modal.querySelector("#quoteForm");
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              modal.innerHTML = `
+      <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+      <div class="text-center">
+      <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+      <i class="ri-check-line ri-2x text-green-500"></i>
+      </div>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Request Submitted!</h3>
+      <p class="text-gray-600">We'll get back to you within 24 hours.</p>
+      <button class="mt-6 bg-primary text-white px-6 py-3 !rounded-button whitespace-nowrap hover:bg-opacity-90 transition close-success">
+      Close
+      </button>
+      </div>
+      </div>
+      `;
+              const closeSuccess = modal.querySelector(".close-success");
+              closeSuccess.addEventListener("click", () => {
+                modal.remove();
+              });
+            });
+          });
+        });
+        // Testimonial Slider
+        const testimonialSlides = document.querySelector(".testimonial-slides");
+        const testimonialDots = document.querySelectorAll(".testimonial-dot");
+        let currentSlide = 0;
+        testimonialDots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentSlide = index;
+            updateSlider();
+          });
+        });
+        function updateSlider() {
+          testimonialSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+          testimonialDots.forEach((dot, index) => {
+            if (index === currentSlide) {
+              dot.classList.add("bg-primary");
+              dot.classList.remove("bg-gray-300");
+            } else {
+              dot.classList.remove("bg-primary");
+              dot.classList.add("bg-gray-300");
+            }
+          });
+        }
+        // Auto slide
+        setInterval(() => {
+          currentSlide = (currentSlide + 1) % 3;
+          updateSlider();
+        }, 5000);
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Custom checkbox functionality
+        const checkboxes = document.querySelectorAll(
+          '.custom-checkbox input[type="checkbox"]',
+        );
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", function () {
+            // This is handled by CSS, but we could add additional functionality here
+          });
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80, // Offset for fixed header
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
